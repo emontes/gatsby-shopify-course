@@ -30,7 +30,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
     "shopify-buy": "^2.11.0",
-    "shopify-verify-webhook": "^1.0.0",
+    "shopify-verify-webhook": "^1.0.1",
     "styled-components": "^5.1.1",
     "styled-reset": "^4.2.0"
   },
@@ -42,10 +42,10 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "node init && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "node init && npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
